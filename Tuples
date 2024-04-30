@@ -1,20 +1,18 @@
-# Create tuples with the same and different items 
 tuple_same = (1, 2, 3) 
 tuple_diff = ('a', 'b', 'c') 
-# Check datatype of tuples print("Datatype of tuple_same:", type(tuple_same)) 
+print("Datatype of tuple_same:", type(tuple_same)) 
 print("Datatype of tuple_diff:", type(tuple_diff)) 
-# Perform tuple indexing and slicing print("Tuple indexing [0]:", tuple_same[0]) 
+print("Tuple indexing [0]:", tuple_same[0]) 
 print("Tuple slicing [1:]:", tuple_diff[1:]) 
-# Show that tuples are immutable 
-# This will raise a TypeError since tuples are immutable
 try:  
 tuple_same[0] = 5 
 except TypeError as e:  
 print("Tuples are immutable:", e) 
-# Use len, min, max functions on a tuple print("Length of tuple_diff:", len(tuple_diff)) 
+print("Length of tuple_diff:", len(tuple_diff)) 
 print("Minimum value in tuple_same:", min(tuple_same)) 
 print("Maximum value in tuple_same:", max(tuple_same)) 
-# Convert a list into a tuple and check the datatype list_to_convert = [4, 5, 6] 
-converted_tuple = tuple(list_to_convert) 
-print("Converted tuple:", converted_tuple) 
+list_to_convert = [4, 5, 6] 
+converted_tuple =tuple(list_to_convert) 
+print("Converted tuple:",
+ converted_tuple) 
 print("Datatype of converted tuple:", type(converted_tuple)) 
