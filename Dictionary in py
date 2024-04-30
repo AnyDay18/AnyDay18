@@ -1,0 +1,7 @@
+# Explain dictionaries in Python and the necessary elements 
+# Dictionaries in Python are unordered collections of key-value pairs. 
+# The key must be unique and immutable, while the value can be of any data type. # Define a dictionary with student names and marks student_marks = {'Alice': 85, 'Bob': 90, 'Charlie': 75} # Access marks of a particular student from the dictionary 
+print("Bob's marks:", student_marks['Bob']) 
+# Convert the dictionary into a DataFrame using pandas import pandas as pd df =
+pd.DataFrame(list(student_marks.items()), columns=['Student', 'Marks']) 
+# Access elements (rows) of the DataFrame print(df) 
