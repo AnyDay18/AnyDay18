@@ -1,0 +1,8 @@
+# Bitwise operations in Python involve manipulating individual bits of numbers. # Perform bitwise operations x = 0b1010 # Binary representation of 10 y = 0b1100 # Binary representation of 12 
+# Bitwise AND (&) bitwise_and = x & y print("Bitwise AND:", bin(bitwise_and)) # Bitwise OR (|) bitwise_or = x | y print("Bitwise OR:", bin(bitwise_or)) 
+# Bitwise NOT (~) bitwise_not_x = ~x print("Bitwise NOT for x:", bin(bitwise_not_x)) 
+# Bitwise XOR (^) bitwise_xor = x ^ y 
+print("Bitwise XOR:", bin(bitwise_xor)) # Right Shift (>>) right_shift_x = x >> 1 
+# Shifting right by 1 bit print("Right Shift for x:", bin(right_shift_x)) 
+# Left Shift (<<) left_shift_y = y << 1 # Shifting left by 1 bit 
+print("Left Shift for y:", bin(left_shift_y)) 
