@@ -1,21 +1,9 @@
-Code pip install pandas Now, let's go through the operations step by step: 
-
-1. Import the Pandas library: 
-
+Code pip install pandas  
 import pandas as pd 
-
-2. Create a dictionary with 5 students' details (roll number, name, and attendance): 
-
-students_dict = {  "RN1": {"name": "Student1", "attendance": 85},  "RN2": {"name": "Student2", "attendance": 92},  "RN3": {"name": "Student3", "attendance": 78},  "RN4": {"name": "Student4", "attendance": 90},  "RN5": {"name": "Student5", "attendance": 80} } 
-
-3. Convert the dictionary into a DataFrame, with index as RN1, RN2, RN3, RN4, RN5:
-
+ students_dict = {  "RN1": {"name": "Student1", "attendance": 85},  "RN2": {"name": "Student2", "attendance": 92},  "RN3": {"name": "Student3", "attendance": 78},  "RN4": {"name": "Student4", "attendance": 90},  "RN5": {"name": "Student5", "attendance": 80} } 
 df =
 pd.DataFrame(list(students_dict.values()), index=list(students_dict.keys())).reset_index() 
 df.columns = ["Roll Number", "Name", "Attendance"] 
 print(df) 
-
-4. Use the .loc function to extract one or more specified rows: 
-
- # Extract a single row print("\nExtracting a single row:") print(df.loc["RN1"]) 
+# Extract a single row print("\nExtracting a single row:") print(df.loc["RN1"]) 
 # Extract multiple rows print("\nExtracting multiple rows:") print(df.loc[["RN1", "RN2", "RN3"]]) 
