@@ -1,15 +1,13 @@
-# Create lists with the same and different items list_same = [1, 2, 3] list_diff = ['a', 'b', 'c'] # Check datatype of lists 
+#
+list_same = [1, 2, 3] list_diff = ['a', 'b', 'c']
 print("Datatype of list_same:", type(list_same)) 
 print("Datatype of list_diff:", type(list_diff)) 
-# Perform list indexing, negative list indexing, and list slicing 
 print("List indexing [0]:", list_same[0]) 
 print("Negative list indexing [-1]:", list_diff[-1]) 
 print("List slicing [1:]:", list_diff[1:]) 
-# Perform list operations: append, extend, sort, pop, remove list_same.append(4) 
+list_same.append(4) 
 print("List after append:", list_same) list_diff.extend(['d', 'e']) 
 print("List after extend:", list_diff) list_nums = [5, 3, 1, 4, 2] list_nums.sort() 
 print("List after sorting:", list_nums) popped_item = list_diff.pop(0) print("Popped item:", popped_item) list_nums.remove(4) 
 print("List after removing 4:", list_nums) 
-# Explain how lists are mutable 
-# Lists in Python are mutable, meaning their elements can be changed directly. 
-# This mutability allows for operations like appending, removing, or modifying elements in place. 
+
