@@ -1,0 +1,38 @@
+1. Read a digital image (color): 
+ 
+import cv2 
+# Load the color image image = cv2.imread('path_to_your_image.jpg') 
+
+2. Get its number of rows and columns, get total number of pixels in the image (size and shape): 
+
+# Get the image shape (height, width, channels) image_shape = image.shape print(f"Image shape: {image_shape}") 
+# Calculate the total number of pixels total_pixels = image_shape[0] * image_shape[1] 
+print(f"Total number of pixels: {total_pixels}") 
+
+3. Show color and grayscale image: 
+
+# Display the original color image cv2.imshow("Original Image", image) cv2.waitKey(0) 
+cv2.destroyAllWindows() 
+# Convert the color image to grayscale gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) 
+# Display the grayscale image cv2.imshow("Grayscale Image", gray_image) 
+cv2.waitKey(0) 
+cv2.destroyAllWindows() 
+
+4. Get a part of the image: 
+
+# Define the region of interest (ROI) roi_x = 100 
+roi_y = 100 
+roi_width = 300 
+roi_height = 200 
+# Get the region of interest from the image cropped_image = image[roi_y:roi_y + roi_height, roi_x:roi_x + roi_width] # Display the cropped image cv2.imshow("Cropped Image", cropped_image) 
+cv2.waitKey(0) 
+cv2.destroyAllWindows() 
+
+5. Make some part of the image black or white: 
+
+# Define the rectangle region to be modified rectangle_x = 200 
+rectangle_y = 200 
+rectangle_width = 250 
+rectangle_height = 200 
+# Create a black rectangle on the image rectangle_color = (0, 0, 0) cv2.rectangle(image,(rectangle_x, rectangle_y), (rectangle_x + rectangle_width, rectangle_y + rectangle_height), rectangle_color, -1) # Display the modified image cv2.imshow("Modified Image", image) cv2.waitKey(0) 
+cv2.destroyAllWindows() 
