@@ -1,0 +1,24 @@
+ Here's a Python code snippet to take a number from the user and determine if it's zero, positive, or negative using conditional statements: 
+Code user_number = int(input("Enter a number: ")) 
+if user_number == 0:  
+print("The number is zero.") 
+elif user_number > 0:  
+print("The number is positive.") 
+else:  
+print("The number is negative.") 
+To display grades based on user input marks, you can use the following Python code: 
+Code user_marks = float(input("Enter the marks obtained: ")) 
+if user_marks >= 90:  
+grade = "A+" 
+elif user_marks >= 80:  
+grade = "A" 
+elif user_marks >= 70:  
+grade = "B+" 
+elif user_marks >= 60:  
+grade = "B" 
+elif user_marks >= 50:  
+grade = "C+" 
+elif user_marks >= 40:  
+grade = "C" 
+else:  
+grade = "Fail" print(f"Grade: {grade}") 
