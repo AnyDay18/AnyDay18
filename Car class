@@ -1,0 +1,18 @@
+ere's a Python implementation of a Car class with attributes, creating objects (cars of different types), and accessing class and object attributes: 
+Code class Car:  
+def __init__(self, make, model, year, color, mileage):  
+self.make = make  
+self.model = model  
+self.year = year  
+self.color = color  
+self.mileage = mileage  def display_info(self):  
+print(f"Make: {self.make}, Model: {self.model}, Year: {self.year}, Color: {self.color}, Mileage: {self.mileage}") # Creating objects (cars of different types) 
+car1 = Car("Toyota", "Camry", 2020, "Silver", 15000) 
+car2 = Car("Ford", "Mustang", 2018, "Red", 38000) 
+car3 = Car("Tesla", "Model 3", 2021, "White", 200) 
+# Accessing attributes of class and objects (instances) 
+print("Car 1 Information:") car1.display_info() 
+print("\nCar 2 Information:") car2.display_info() 
+print("\nCar 3 Information:") car3.display_info() 
+In this code, we define the Car class with attributes like make, model, year, color, and mileage. We also have a method called display_info() that prints the car's information.
+We then create three car objects (car1, car2, and car3) with different attributes and call the display_info() method for each car to access and print their inform 
