@@ -1,0 +1,6 @@
+# Define variables x and y with integer values
+x = 10 y = 5 
+# Print the values of x and y print("x:", x) 
+print("y:", y) 
+# Perform comparison operations print("Equal (x == y):", x == y) print("Not Equal (x != y):", x != y) print("Greater Than (x > y):", x > y) print("Less Than (x < y):", x < y) print("Greater Than or Equal To (x >= y):", x >= y) 
+print("Less Than or Equal To (x <= y):", x <= y) 
