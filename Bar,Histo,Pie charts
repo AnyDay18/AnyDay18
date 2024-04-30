@@ -1,0 +1,23 @@
+ pip install matplotlib
+import matplotlib.pyplot as plt import numpy as np
+%matplotlib inline 
+ Subjects = ['Physics', 'Mathematics', 'Chemistry', 'English', 'History'] students = [23, 17, 35, 29, 12] 
+
+a. Bar plot:
+
+# Create a bar plot fig, ax = plt.subplots() 
+ax.bar(Subjects, students) ax.set_xlabel('Subjects') ax.set_ylabel('Number of Students') ax.set_title('Number of Students per Subject') 
+plt.show() 
+
+b. Pie chart:
+
+# Create a pie chart 
+fig, ax = plt.subplots() 
+ax.pie(students, labels=Subjects) ax.axis('equal') 
+ax.set_title('Subjects Distribution (in Percentage)') plt.show() 
+
+c. Histogram: 
+
+# Create a histogram plt.hist(students, bins=range(0, 50, 5), align='left', rwidth=0.8) 
+plt.xlabel('Number of Students') plt.ylabel('Frequency') plt.title('Distribution of Students per Subject') 
+plt.show() T 
