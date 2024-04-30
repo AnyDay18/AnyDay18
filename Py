@@ -1,0 +1,8 @@
+# Question 1
+x = 5 y = 3 print("x:", x) 
+print("y:", y) # Operations print("Multiplication:", x * y) print("Division:", x / y) 
+print("Floor Division:", x // y) print("Modulus:", x % y) print("Exponentiation:", x ** y) # Typecasting integer_num = 10 
+float_num = float(integer_num) print("Integer to Float:", float_num, type(float_num)) 
+integer_str = str(integer_num) print("Integer to String:", integer_str, type(integer_str)) 
+string_num = "15" int_from_str = int(string_num) 
+print("String to Integer:", int_from_str, type(int_from_str)) 
