@@ -1,0 +1,20 @@
+Code class Animal: 
+def __init__(self, name, species, age):  self.name = name  
+self.species = species  
+self.age = age  
+cat = Animal("Whiskers", "Feline", 3) 
+dog = Animal("Buddy", "Canine", 2) print("Cat:") 
+print(f"Name: {cat.name}") print(f"Species: {cat.species}") print(f"Age: {cat.age}") print("\nDog:") 
+print(f"Name: {dog.name}") print(f"Species: {dog.species}") print(f"Age: {dog.age}") 
+Mammal:  def __init__(self, name, species):  
+self.name = name  
+self.species = species  
+def make_sound(self):  
+print(f"{self.name} makes a sound.") class AnimalWithFur(Mammal):  
+def __init__(self, name, species, fur_type): 
+super().__init__(name, species)  self.fur_type = fur_type  
+def describe_fur(self):  
+print(f"{self.name} has {self.fur_type} fur.") 
+fur_animal = AnimalWithFur("Fluffy", "Feline", "Woolen") 
+print("Animal With Fur:") print(f"Name: {fur_animal.name}") 
+print(f"Species: {fur_animal.species}") print(f"Fur Type: {fur_animal.fur_type}") fur_animal.make_sound() fur_animal.describe_fur() 
