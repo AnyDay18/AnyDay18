@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt import numpy as np
 
 a. Bar plot:
 
-# Create a bar plot fig, ax = plt.subplots() 
+# Create a bar plot
+fig, ax = plt.subplots() 
 ax.bar(Subjects, students) ax.set_xlabel('Subjects') ax.set_ylabel('Number of Students') ax.set_title('Number of Students per Subject') 
 plt.show() 
 
@@ -18,6 +19,7 @@ ax.set_title('Subjects Distribution (in Percentage)') plt.show()
 
 c. Histogram: 
 
-# Create a histogram plt.hist(students, bins=range(0, 50, 5), align='left', rwidth=0.8) 
+# Create a histogram 
+plt.hist(students, bins=range(0, 50, 5), align='left', rwidth=0.8) 
 plt.xlabel('Number of Students') plt.ylabel('Frequency') plt.title('Distribution of Students per Subject') 
 plt.show() T 
