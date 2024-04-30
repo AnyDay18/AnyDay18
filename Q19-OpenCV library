@@ -1,0 +1,23 @@
+pip install opencv-python 
+import cv2 
+# Load the color image image_path = 'path_to_your_image/color_image.jpg' color_image = cv2.imread(image_path) 
+# Get the image shape (height, width, channels) 
+image_shape = color_image.shape print(f"Image shape: {image_shape}") 
+# Get the total number of pixels (size) image_size = cv2.countNonZero(color_image) print(f"Image size: {image_size}") 
+ # Convert the color image to grayscale gray_image = cv2.cvtColor(color_image, cv2.COLOR_BGR2GRAY) 
+# Display the images 
+cv2.imshow("Color Image", color_image) cv2.imshow("Gray Scale Image", gray_image) 
+cv2.waitKey(0) 
+cv2.destroyAllWindows() 
+ # Get a part of the color image cropped_image = color_image[100:300, 200:400] 
+# Display the cropped image cv2.imshow("Cropped Image", cropped_image) 
+cv2.waitKey(0) 
+cv2.destroyAllWindows() 
+# Convert the color image to grayscale gray_image = cv2.cvtColor(color_image, cv2.COLOR_BGR2GRAY) 
+# Set a part of the gray image to black gray_image[100:300, 200:400] = 0 
+# Convert the modified grayscale image back to color 
+black_image = cv2.cvtColor(gray_image, cv2.COLOR_GRAY2BGR) 
+# Display the original and modified images 
+cv2.imshow("Original Color Image", color_image) cv2.imshow("Modified Black Image", black_image) 
+cv2.waitKey(0) 
+cv2.destroyAllWindows() 
